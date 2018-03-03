@@ -1,0 +1,102 @@
+body {
+  background-color: rgba(15, 14, 14, 0.897);
+  text-align: center;
+}
+
+h1 {
+  font-family: "Trebuchet MS";
+  color: lightgrey;
+}
+
+.wrapper {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 5fr 1fr 1fr 5fr;
+  background-color: dimgray;
+  padding-left: 0px;
+  height: 50px;
+}
+
+.home {
+  text-align: right;
+  color: lightgrey;
+}
+
+.blog {
+  text-align: center;
+  color: lightgrey;
+}
+
+.about {
+  text-align: center;
+  color: lightgrey;
+}
+.contact {
+  text-align: left;
+  color: lightgrey;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background: darkgray;
+  padding: 8px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+}
+
+.articleWrapper {
+  width: 600px;
+  height: 600px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: lightgrey;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.article > h1#title {
+  font-family: cursive;
+  color: grey;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.article > h2#timeStamp {
+  font-family: monospace;
+  font-size: 14px;
+  color: darkolivegreen;
+  text-align: left;
+  font-style: italic;
+  margin-top: 0;
+  margin-top: 0px;
+}
+
+.article > p#content {
+  font-family: Lucida Grande;
+  text-align: left;
+}
+
+.imageWrapper {
+  width: 600px;
+  height: 800px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: lightgrey;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.imageWrapper > div#image{
+width: 400px;
+height: 400px;
+margin-left: 100px;
+margin-right: 100px;
+background-color: darkgray;
+text-align: center;
+}
+
+.imageWrapper > p#description{
+    font-family: Lucida Grande;
+}
