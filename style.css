@@ -84,7 +84,8 @@ h1 {
 
 .imageWrapper {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
   margin-top: 20px;
   margin-left: 20px;
   background: lightgrey;
@@ -94,13 +95,15 @@ h1 {
 
 .imageWrapper > div#image {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-column: 2 / -2;
+  grid-row: 1 / -2;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: darkgray;
-  text-align: center;
 }
 
 .imageWrapper > p#description {
+  display: grid;
+  padding-top: 20px;
+  grid-column: 1 / -1;
   font-family: "Rubik", sans-serif;
 }
