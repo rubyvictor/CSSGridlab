@@ -1,24 +1,28 @@
 body {
   background-color: rgba(15, 14, 14, 0.897);
   text-align: center;
+  font-family: "Rubik", sans-serif;
 }
 
 h1 {
-  font-family: "Trebuchet MS";
+  font-family: "Rubik", sans-serif;
   color: lightgrey;
 }
 
 .wrapper {
   display: grid;
   text-align: center;
-  grid-template-columns: 5fr 1fr 1fr 5fr;
+  vertical-align: middle;
+  grid-template-columns: repeat(12, 1fr);
   background-color: dimgray;
   padding-left: 0px;
   height: 50px;
+  line-height: 50px;
 }
 
 .home {
-  text-align: right;
+  grid-column: 5;
+  text-align: center;
   color: lightgrey;
 }
 
@@ -32,7 +36,7 @@ h1 {
   color: lightgrey;
 }
 .contact {
-  text-align: left;
+  text-align: center;
   color: lightgrey;
 }
 
@@ -64,9 +68,9 @@ h1 {
 }
 
 .article > h2#timeStamp {
-  font-family: monospace;
+  font-family: "Rubik", sans-serif;
   font-size: 14px;
-  color: darkolivegreen;
+  color: #6d4427;
   text-align: left;
   font-style: italic;
   margin-top: 0;
@@ -74,7 +78,7 @@ h1 {
 }
 
 .article > p#content {
-  font-family: Lucida Grande;
+  font-family: "Rubik", sans-serif;
   text-align: left;
 }
 
@@ -98,5 +102,5 @@ h1 {
 }
 
 .imageWrapper > p#description {
-  font-family: Lucida Grande;
+  font-family: "Rubik", sans-serif;
 }
