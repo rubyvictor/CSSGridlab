@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: rgba(15, 14, 14, 0.897);
   text-align: center;
   font-family: "Rubik", sans-serif;
@@ -7,40 +7,44 @@ body {
 h1 {
   font-family: "Rubik", sans-serif;
   color: lightgrey;
+} */
+
+.container {
+  height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 100px;
+    grid-template-areas: 
+        "m m h h h h i i i i i i"
+        "m m c c c c i i i i i i"
+        "m m c c c c i i i i i i"
+        "f f f f f f f f f f f f";
 }
 
-.wrapper {
-  display: grid;
-  text-align: center;
-  vertical-align: middle;
-  grid-template-columns: repeat(12, 1fr);
-  background-color: dimgray;
-  padding-left: 0px;
-  height: 50px;
-  line-height: 50px;
+.image {
+  grid-area: i;
+  object-fit: contain;
+  width: 100%;
+  overflow: hidden;
+}
+.inventions {
+    grid-area: h;
 }
 
-.home {
-  grid-column: 5;
-  text-align: center;
-  color: lightgrey;
+.music {
+    grid-area: m;
 }
 
-.blog {
-  text-align: center;
-  color: lightgrey;
+.theories {
+    grid-area: c;
 }
 
-.about {
-  text-align: center;
-  color: lightgrey;
-}
-.contact {
-  text-align: center;
-  color: lightgrey;
+.family {
+    grid-area: f;
 }
 
-.main {
+/* .main {
   width: 100%;
   height: 100%;
   background: darkgray;
@@ -80,8 +84,8 @@ h1 {
 .article > p#content {
   font-family: "Rubik", sans-serif;
   text-align: left;
-}
-
+} */
+/* 
 .imageWrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -106,4 +110,4 @@ h1 {
   padding-top: 20px;
   grid-column: 1 / -1;
   font-family: "Rubik", sans-serif;
-}
+} */
