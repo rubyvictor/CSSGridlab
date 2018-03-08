@@ -6,6 +6,16 @@
   color: #ffeead;
 }
 
+.container > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #ffeead;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 html,
 body {
   box-sizing: border-box;
@@ -16,9 +26,9 @@ body {
 }
 
 a {
-    background-clip: border-box;
+  background-clip: border-box;
 }
-.container > div:nth-child(1n) {
+.container > div:nth-child(n) {
   background-color: #96ceb4;
 }
 
@@ -32,4 +42,9 @@ a {
 
 .container > div:nth-child(4n) {
   background-color: #ffcc5c;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
